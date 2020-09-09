@@ -1,0 +1,40 @@
+{
+  "name": "PrescriptionItem",
+  "fields": [
+    {
+      "fieldName": "prescriptionQty",
+      "fieldType": "Float"
+    },
+    {
+      "fieldName": "instructionsToCustomer",
+      "fieldType": "String"
+    }
+  ],
+  "relationships": [
+    {
+      "relationshipType": "many-to-one",
+      "otherEntityName": "drug",
+      "otherEntityRelationshipName": "prescriptionItem",
+      "relationshipName": "drug",
+      "otherEntityField": "drugName"
+    },
+    {
+      "relationshipType": "many-to-one",
+      "otherEntityName": "prescription",
+      "otherEntityRelationshipName": "items",
+      "relationshipName": "prescription",
+      "otherEntityField": "id"
+    }
+  ],
+  "changelogDate": "20200909184011",
+  "entityTableName": "prescription_item",
+  "dto": "no",
+  "pagination": "no",
+  "service": "no",
+  "jpaMetamodelFiltering": false,
+  "fluentMethods": true,
+  "readOnly": false,
+  "embedded": false,
+  "clientRootFolder": "",
+  "applications": "*"
+}

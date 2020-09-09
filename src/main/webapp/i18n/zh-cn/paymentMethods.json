@@ -1,0 +1,23 @@
+{
+  "abddApp": {
+    "paymentMethods": {
+      "home": {
+        "title": "Payment Methods",
+        "createLabel": "创建新 Payment Methods",
+        "createOrEditLabel": "创建或编辑 Payment Methods",
+        "notFound": "No Payment Methods found"
+      },
+      "created": "Payment Methods {{ param }} 创建成功",
+      "updated": "Payment Methods {{ param }} 更新成功",
+      "deleted": "Payment Methods {{ param }} 删除成功",
+      "delete": {
+        "question": "你确定要删除 Payment Methods {{ id }} 吗？"
+      },
+      "detail": {
+        "title": "Payment Methods"
+      },
+      "code": "Code",
+      "pmtMethodDesc": "Pmt Method Desc"
+    }
+  }
+}

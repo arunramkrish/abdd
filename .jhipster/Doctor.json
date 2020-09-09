@@ -1,0 +1,42 @@
+{
+  "name": "Doctor",
+  "fields": [
+    {
+      "fieldName": "doctorName",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "doctorHospital",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "doctorSpeciality",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "mobileNo",
+      "fieldType": "String"
+    }
+  ],
+  "relationships": [
+    {
+      "relationshipType": "one-to-one",
+      "otherEntityName": "address",
+      "otherEntityRelationshipName": "doctor",
+      "relationshipName": "address",
+      "otherEntityField": "line1BuildingNumber",
+      "ownerSide": true
+    }
+  ],
+  "changelogDate": "20200909183511",
+  "entityTableName": "doctor",
+  "dto": "no",
+  "pagination": "no",
+  "service": "no",
+  "jpaMetamodelFiltering": false,
+  "fluentMethods": true,
+  "readOnly": false,
+  "embedded": false,
+  "clientRootFolder": "",
+  "applications": "*"
+}

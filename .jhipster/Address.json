@@ -1,0 +1,45 @@
+{
+  "name": "Address",
+  "fields": [
+    {
+      "fieldName": "line1BuildingNumber",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "lineStreetNumber",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "lineLocality",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "city",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "zipPostcode",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "state",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "country",
+      "fieldType": "String"
+    }
+  ],
+  "relationships": [],
+  "changelogDate": "20200909183311",
+  "entityTableName": "address",
+  "dto": "no",
+  "pagination": "no",
+  "service": "no",
+  "jpaMetamodelFiltering": false,
+  "fluentMethods": true,
+  "readOnly": false,
+  "embedded": false,
+  "clientRootFolder": "",
+  "applications": "*"
+}

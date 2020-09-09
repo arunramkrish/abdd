@@ -1,0 +1,38 @@
+{
+  "name": "Customer",
+  "fields": [
+    {
+      "fieldName": "customerName",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "dateBecameCustomer",
+      "fieldType": "LocalDate"
+    },
+    {
+      "fieldName": "mobileNo",
+      "fieldType": "String"
+    }
+  ],
+  "relationships": [
+    {
+      "relationshipType": "one-to-one",
+      "otherEntityName": "address",
+      "otherEntityRelationshipName": "customer",
+      "relationshipName": "address",
+      "otherEntityField": "line1BuildingNumber",
+      "ownerSide": true
+    }
+  ],
+  "changelogDate": "20200909183411",
+  "entityTableName": "customer",
+  "dto": "no",
+  "pagination": "no",
+  "service": "no",
+  "jpaMetamodelFiltering": false,
+  "fluentMethods": true,
+  "readOnly": false,
+  "embedded": false,
+  "clientRootFolder": "",
+  "applications": "*"
+}

@@ -1,0 +1,53 @@
+{
+  "name": "Drug",
+  "fields": [
+    {
+      "fieldName": "drugName",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "drugCost",
+      "fieldType": "Float"
+    },
+    {
+      "fieldName": "drugAavailableDate",
+      "fieldType": "LocalDate"
+    },
+    {
+      "fieldName": "drugWithdrawnDate",
+      "fieldType": "LocalDate"
+    },
+    {
+      "fieldName": "drugDescription",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "genericYn",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "drugDetails",
+      "fieldType": "String"
+    }
+  ],
+  "relationships": [
+    {
+      "relationshipType": "many-to-one",
+      "otherEntityName": "drugCompany",
+      "otherEntityRelationshipName": "drug",
+      "relationshipName": "company",
+      "otherEntityField": "companyName"
+    }
+  ],
+  "changelogDate": "20200909183911",
+  "entityTableName": "drug",
+  "dto": "no",
+  "pagination": "no",
+  "service": "no",
+  "jpaMetamodelFiltering": false,
+  "fluentMethods": true,
+  "readOnly": false,
+  "embedded": false,
+  "clientRootFolder": "",
+  "applications": "*"
+}

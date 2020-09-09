@@ -1,0 +1,25 @@
+{
+  "abddApp": {
+    "prescriptionItem": {
+      "home": {
+        "title": "Prescription Items",
+        "createLabel": "创建新 Prescription Item",
+        "createOrEditLabel": "创建或编辑 Prescription Item",
+        "notFound": "No Prescription Items found"
+      },
+      "created": "Prescription Item {{ param }} 创建成功",
+      "updated": "Prescription Item {{ param }} 更新成功",
+      "deleted": "Prescription Item {{ param }} 删除成功",
+      "delete": {
+        "question": "你确定要删除 Prescription Item {{ id }} 吗？"
+      },
+      "detail": {
+        "title": "Prescription Item"
+      },
+      "prescriptionQty": "Prescription Qty",
+      "instructionsToCustomer": "Instructions To Customer",
+      "drug": "Drug",
+      "prescription": "Prescription"
+    }
+  }
+}

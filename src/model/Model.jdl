@@ -1,0 +1,78 @@
+entity Address {
+    line1BuildingNumber String
+    lineStreetNumber String
+    lineLocality String
+    city String
+    zipPostcode String
+    state String
+    country String
+}
+
+entity Customer {
+    customerName String
+    dateBecameCustomer LocalDate
+    mobileNo String
+}
+
+entity Doctor {
+    doctorName String
+    doctorHospital String
+    doctorSpeciality String
+    mobileNo String
+}
+
+entity PrescriptionStatus {
+    code String
+    description String
+}
+
+entity PaymentMethods {
+    code String
+    pmtMethodDesc String
+}
+
+entity DrugCompany {
+    companyName String
+    companyDetails String
+}
+
+entity Drug {
+    drugName String
+    drugCost Float
+    drugAavailableDate LocalDate
+    drugWithdrawnDate LocalDate
+    drugDescription String
+    genericYn String
+    drugDetails String
+}
+
+entity PrescriptionItem {
+    prescriptionQty Float
+    instructionsToCustomer String
+}
+
+entity Prescription {
+    prescriptionIssuedDate LocalDate
+    prescriptionFilledDate LocalDate
+    otherDetails String
+}
+/**
+    * One to one relationship.
+*/
+relationship OneToOne {
+    Customer{address(line1BuildingNumber)} to Address
+    Doctor{address(line1BuildingNumber)} to Address
+}
+
+relationship ManyToOne {
+    Drug{company(companyName)} to DrugCompany
+    PrescriptionItem{drug(drugName)} to Drug
+    Prescription{customer(customerName)} to Customer
+    Prescription{doctor(doctorName)} to Doctor
+    Prescription{status(code)} to PrescriptionStatus
+    Prescription{paymentMethods(code)} to PaymentMethods
+}
+
+relationship OneToMany {
+    Prescription{items} to PrescriptionItem
+}

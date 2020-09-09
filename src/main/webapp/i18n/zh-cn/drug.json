@@ -1,0 +1,29 @@
+{
+  "abddApp": {
+    "drug": {
+      "home": {
+        "title": "Drugs",
+        "createLabel": "创建新 Drug",
+        "createOrEditLabel": "创建或编辑 Drug",
+        "notFound": "No Drugs found"
+      },
+      "created": "Drug {{ param }} 创建成功",
+      "updated": "Drug {{ param }} 更新成功",
+      "deleted": "Drug {{ param }} 删除成功",
+      "delete": {
+        "question": "你确定要删除 Drug {{ id }} 吗？"
+      },
+      "detail": {
+        "title": "Drug"
+      },
+      "drugName": "Drug Name",
+      "drugCost": "Drug Cost",
+      "drugAavailableDate": "Drug Aavailable Date",
+      "drugWithdrawnDate": "Drug Withdrawn Date",
+      "drugDescription": "Drug Description",
+      "genericYn": "Generic Yn",
+      "drugDetails": "Drug Details",
+      "company": "Company"
+    }
+  }
+}

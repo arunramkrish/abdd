@@ -1,0 +1,23 @@
+{
+  "abddApp": {
+    "drugCompany": {
+      "home": {
+        "title": "Drug Companies",
+        "createLabel": "创建新 Drug Company",
+        "createOrEditLabel": "创建或编辑 Drug Company",
+        "notFound": "No Drug Companies found"
+      },
+      "created": "Drug Company {{ param }} 创建成功",
+      "updated": "Drug Company {{ param }} 更新成功",
+      "deleted": "Drug Company {{ param }} 删除成功",
+      "delete": {
+        "question": "你确定要删除 Drug Company {{ id }} 吗？"
+      },
+      "detail": {
+        "title": "Drug Company"
+      },
+      "companyName": "Company Name",
+      "companyDetails": "Company Details"
+    }
+  }
+}

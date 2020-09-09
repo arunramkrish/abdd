@@ -1,0 +1,26 @@
+{
+  "abddApp": {
+    "doctor": {
+      "home": {
+        "title": "Doctors",
+        "createLabel": "创建新 Doctor",
+        "createOrEditLabel": "创建或编辑 Doctor",
+        "notFound": "No Doctors found"
+      },
+      "created": "Doctor {{ param }} 创建成功",
+      "updated": "Doctor {{ param }} 更新成功",
+      "deleted": "Doctor {{ param }} 删除成功",
+      "delete": {
+        "question": "你确定要删除 Doctor {{ id }} 吗？"
+      },
+      "detail": {
+        "title": "Doctor"
+      },
+      "doctorName": "Doctor Name",
+      "doctorHospital": "Doctor Hospital",
+      "doctorSpeciality": "Doctor Speciality",
+      "mobileNo": "Mobile No",
+      "address": "Address"
+    }
+  }
+}

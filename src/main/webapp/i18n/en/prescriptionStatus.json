@@ -1,0 +1,23 @@
+{
+  "abddApp": {
+    "prescriptionStatus": {
+      "home": {
+        "title": "Prescription Statuses",
+        "createLabel": "Create a new Prescription Status",
+        "createOrEditLabel": "Create or edit a Prescription Status",
+        "notFound": "No Prescription Statuses found"
+      },
+      "created": "A new Prescription Status is created with identifier {{ param }}",
+      "updated": "A Prescription Status is updated with identifier {{ param }}",
+      "deleted": "A Prescription Status is deleted with identifier {{ param }}",
+      "delete": {
+        "question": "Are you sure you want to delete Prescription Status {{ id }}?"
+      },
+      "detail": {
+        "title": "Prescription Status"
+      },
+      "code": "Code",
+      "description": "Description"
+    }
+  }
+}

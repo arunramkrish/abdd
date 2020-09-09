@@ -1,0 +1,64 @@
+{
+  "name": "Prescription",
+  "fields": [
+    {
+      "fieldName": "prescriptionIssuedDate",
+      "fieldType": "LocalDate"
+    },
+    {
+      "fieldName": "prescriptionFilledDate",
+      "fieldType": "LocalDate"
+    },
+    {
+      "fieldName": "otherDetails",
+      "fieldType": "String"
+    }
+  ],
+  "relationships": [
+    {
+      "relationshipType": "one-to-many",
+      "otherEntityName": "prescriptionItem",
+      "otherEntityRelationshipName": "prescription",
+      "relationshipName": "items"
+    },
+    {
+      "relationshipType": "many-to-one",
+      "otherEntityName": "customer",
+      "otherEntityRelationshipName": "prescription",
+      "relationshipName": "customer",
+      "otherEntityField": "customerName"
+    },
+    {
+      "relationshipType": "many-to-one",
+      "otherEntityName": "doctor",
+      "otherEntityRelationshipName": "prescription",
+      "relationshipName": "doctor",
+      "otherEntityField": "doctorName"
+    },
+    {
+      "relationshipType": "many-to-one",
+      "otherEntityName": "prescriptionStatus",
+      "otherEntityRelationshipName": "prescription",
+      "relationshipName": "status",
+      "otherEntityField": "code"
+    },
+    {
+      "relationshipType": "many-to-one",
+      "otherEntityName": "paymentMethods",
+      "otherEntityRelationshipName": "prescription",
+      "relationshipName": "paymentMethods",
+      "otherEntityField": "code"
+    }
+  ],
+  "changelogDate": "20200909184111",
+  "entityTableName": "prescription",
+  "dto": "no",
+  "pagination": "no",
+  "service": "no",
+  "jpaMetamodelFiltering": false,
+  "fluentMethods": true,
+  "readOnly": false,
+  "embedded": false,
+  "clientRootFolder": "",
+  "applications": "*"
+}
