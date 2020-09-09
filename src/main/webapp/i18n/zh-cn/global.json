@@ -7,6 +7,15 @@
       "jhipster-needle-menu-add-element": "JHipster will add additional menu entries here (do not translate!)",
       "entities": {
         "main": "数据",
+        "address": "Address",
+        "customer": "Customer",
+        "doctor": "Doctor",
+        "prescriptionStatus": "Prescription Status",
+        "paymentMethods": "Payment Methods",
+        "drugCompany": "Drug Company",
+        "drug": "Drug",
+        "prescriptionItem": "Prescription Item",
+        "prescription": "Prescription",
         "jhipster-needle-menu-add-entry": "JHipster will add additional entities here (do not translate!)"
       },
       "account": {

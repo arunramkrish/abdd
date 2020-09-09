@@ -14,7 +14,21 @@
     <property name="uuidType" value="uuid" dbms="h2, postgresql"/>
 
     <include file="config/liquibase/changelog/00000000000000_initial_schema.xml" relativeToChangelogFile="false"/>
+    <include file="config/liquibase/changelog/20200909183311_added_entity_Address.xml" relativeToChangelogFile="false"/>
+    <include file="config/liquibase/changelog/20200909183411_added_entity_Customer.xml" relativeToChangelogFile="false"/>
+    <include file="config/liquibase/changelog/20200909183511_added_entity_Doctor.xml" relativeToChangelogFile="false"/>
+    <include file="config/liquibase/changelog/20200909183611_added_entity_PrescriptionStatus.xml" relativeToChangelogFile="false"/>
+    <include file="config/liquibase/changelog/20200909183711_added_entity_PaymentMethods.xml" relativeToChangelogFile="false"/>
+    <include file="config/liquibase/changelog/20200909183811_added_entity_DrugCompany.xml" relativeToChangelogFile="false"/>
+    <include file="config/liquibase/changelog/20200909183911_added_entity_Drug.xml" relativeToChangelogFile="false"/>
+    <include file="config/liquibase/changelog/20200909184011_added_entity_PrescriptionItem.xml" relativeToChangelogFile="false"/>
+    <include file="config/liquibase/changelog/20200909184111_added_entity_Prescription.xml" relativeToChangelogFile="false"/>
     <!-- jhipster-needle-liquibase-add-changelog - JHipster will add liquibase changelogs here -->
+    <include file="config/liquibase/changelog/20200909183411_added_entity_constraints_Customer.xml" relativeToChangelogFile="false"/>
+    <include file="config/liquibase/changelog/20200909183511_added_entity_constraints_Doctor.xml" relativeToChangelogFile="false"/>
+    <include file="config/liquibase/changelog/20200909183911_added_entity_constraints_Drug.xml" relativeToChangelogFile="false"/>
+    <include file="config/liquibase/changelog/20200909184011_added_entity_constraints_PrescriptionItem.xml" relativeToChangelogFile="false"/>
+    <include file="config/liquibase/changelog/20200909184111_added_entity_constraints_Prescription.xml" relativeToChangelogFile="false"/>
     <!-- jhipster-needle-liquibase-add-constraints-changelog - JHipster will add liquibase constraints changelogs here -->
     <!-- jhipster-needle-liquibase-add-incremental-changelog - JHipster will add incremental liquibase changelogs here -->
 </databaseChangeLog>
